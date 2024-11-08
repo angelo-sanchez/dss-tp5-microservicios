@@ -14,7 +14,7 @@ Este microservicio consultará información de los demás microservicios para lu
 
 1.  Reporta las carreras con al menos un inscripto, ordenadas por orden alfabético.
 
-    **Path** `/careers`
+    **Path** `/reports/careers`
 
     **Params** `N/A`
 
@@ -31,7 +31,7 @@ Este microservicio consultará información de los demás microservicios para lu
 
 1.  Reporte completo de carreras, con información de cantidad de inscriptos y egresados por año.
 
-    **Path** `/careers/full`
+    **Path** `/reports/careers-full`
 
     **Params** `N/A`
 
