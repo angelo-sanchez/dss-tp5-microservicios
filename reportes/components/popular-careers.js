@@ -1,8 +1,8 @@
-import { findCareerById } from "./career-data";
-import { getAllEnrollments } from "./enrollment-data";
+import { findCareerById } from "./career-data.js";
+import { getAllEnrollments } from "./enrollment-data.js";
 
 /**
- *
+ * Agrupa las matrículas por carrera, contando cuántas matrículas hay por carrera
  * @param { {careerId: number}[] } enrollments
  * @returns { { [careerId: number]: number } } Un objeto cuyas claves son los IDs de las carreras y los valores son la cantidad de matrículas
  */

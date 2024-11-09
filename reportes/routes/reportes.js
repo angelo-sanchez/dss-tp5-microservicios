@@ -11,7 +11,7 @@ reportes.get("/careers", async (req, res) => {
     res.status(200).json(popularCareers);
   } catch (error) {
     console.error({ error });
-    res.status(500).send(error);
+    res.status(500).json({ error });
   }
 });
 
