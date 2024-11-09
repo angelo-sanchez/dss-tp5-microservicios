@@ -1,16 +1,18 @@
-###Microservicio de Estudiantes###
+Microservicio de Estudiantes
+==============
+
 Este microservicio está consultar datos de estudiantes, y crear nuevos estudiantes.
 Para poder hacerlo, debe tener conexión a los demás microservicios del sistema
 
 
-**Rutas**
+***Rutas***
 Obtiene el listado de estudiantes. 
 Puede filtrar por cualquiera de los atributos de la entidad student.
 Puede establecer un atributo de ordenamiento, y la direccion (ASC | DESC)
 
-**Path GET /students/**
+***Path GET /students/***
 
-**Params** 
+***Params***
 id : int (opcional)
 first_name : string (opcional)
 last_name : string (opcional)
@@ -22,7 +24,7 @@ university_book_number : string (opcional)
 sort_by : string (opcional)
 order : string (ASC | DESC) (opcional)
 
-**Response**
+***Response***
 
 [
     {
@@ -39,9 +41,9 @@ order : string (ASC | DESC) (opcional)
 
 Persitir un nuevo estudiante
 
-**Path POST /students/**
+***Path POST /students/***
 
-**Body Params**
+***Body Params***
 
 {
     "first_name": string,
@@ -53,7 +55,7 @@ Persitir un nuevo estudiante
     "university_book_number":int
 }
 
-**Response**
+***Response***
 
 {  
     "id":int,
