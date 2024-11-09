@@ -6,7 +6,7 @@ Para poder hacerlo, debe tener conexión a los demás microservicios del sistema
 
 
 # Rutas
-Obtiene el listado de estudiantes. 
+1. Obtiene el listado de estudiantes. 
 Puede filtrar por cualquiera de los atributos de la entidad student.
 Puede establecer un atributo de ordenamiento, y la direccion (ASC | DESC)
 
@@ -39,7 +39,7 @@ order : string (ASC | DESC) (opcional)
     }
 ]
 
-Persitir un nuevo estudiante
+2. Persitir un nuevo estudiante
 
 ***Path POST /students/***
 
