@@ -10,7 +10,7 @@ Puede establecer un atributo de ordenamiento, y la direccion (ASC | DESC)
 
 ***Path GET /students/***
 
-***Params***
+***Query Params***
 * id : int (opcional)
 * first_name : string (opcional)
 * last_name : string (opcional)
