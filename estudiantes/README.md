@@ -25,7 +25,7 @@ Puede establecer un atributo de ordenamiento, y la direccion (ASC | DESC)
 * order : string (ASC | DESC) (opcional)
 
 ***Response***
-
+ ```json
 [
     {
         "id": int,
@@ -38,13 +38,14 @@ Puede establecer un atributo de ordenamiento, y la direccion (ASC | DESC)
         "university_book_number": string
     }
 ]
+ ```
 
 2. Persitir un nuevo estudiante
 
 ***Path POST /students/***
 
 ***Body Params***
-
+ ```json
 {
     "first_name": string,
     "last_name":string,
@@ -54,9 +55,9 @@ Puede establecer un atributo de ordenamiento, y la direccion (ASC | DESC)
     "city_of_residence":string,
     "university_book_number":int
 }
-
+ ```
 ***Response***
-
+ ```json
 {  
     "id":int,
     "first_name": string,
@@ -67,3 +68,4 @@ Puede establecer un atributo de ordenamiento, y la direccion (ASC | DESC)
     "city_of_residence":string,
     "university_book_number":int
 }
+ ```
