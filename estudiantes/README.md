@@ -13,16 +13,16 @@ Puede establecer un atributo de ordenamiento, y la direccion (ASC | DESC)
 ***Path GET /students/***
 
 ***Params***
-id : int (opcional)
-first_name : string (opcional)
-last_name : string (opcional)
-age : int (opcional)
-gender : string (M | F) (opcional)
-document_number : string (opcional)
-city_of_residence : string (opcional)
-university_book_number : string (opcional)
-sort_by : string (opcional)
-order : string (ASC | DESC) (opcional)
+* id : int (opcional)
+* first_name : string (opcional)
+* last_name : string (opcional)
+* age : int (opcional)
+* gender : string (M | F) (opcional)
+* document_number : string (opcional)
+* city_of_residence : string (opcional)
+* university_book_number : string (opcional)
+* sort_by : string (opcional)
+* order : string (ASC | DESC) (opcional)
 
 ***Response***
 
