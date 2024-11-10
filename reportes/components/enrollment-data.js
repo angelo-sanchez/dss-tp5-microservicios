@@ -2,7 +2,7 @@ import { ENROLLMENTS_BASE_URL, USE_MOCKS } from "../env.js";
 
 /**
  * Busca todas las matrículas existentes
- * @returns {Promise<[{careerId: number, enrolledYear: number, graduatedYear: number, studentId: number}]>} Un arreglo de objetos que representan a las matrículas
+ * @returns {Promise<[{careerId: number, enrollmentYear: number, graduatedYear: number, studentId: number}]>} Un arreglo de objetos que representan a las matrículas
  */
 export const getAllEnrollments = async () => {
   if (USE_MOCKS) {
