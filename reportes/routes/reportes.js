@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { ENROLLMENTS_BASE_URL, CAREERS_BASE_URL } from "../env.js";
 import { getPopularCareers } from "../components/popular-careers.js";
+import { getFullReport } from "../components/full-report.js";
 
 /** Este es el router principal, que empieza en /careers */
 export const reportes = Router();
@@ -15,6 +15,12 @@ reportes.get("/careers", async (req, res) => {
   }
 });
 
-reportes.get("/careers-full", (req, res) => {
-  res.send("careers-full");
+reportes.get("/careers-full", async (req, res) => {
+  try {
+    const fullReport = await getFullReport();
+    res.status(200).json(fullReport);
+  } catch (error) {
+    console.error({ error });
+    res.status(500).json({ error });
+  }
 });
