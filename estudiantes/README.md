@@ -5,7 +5,7 @@ Este microservicio sirve para consultar datos de estudiantes, y crear nuevos est
 
 Depende de el microservicio de matriculados, para poder obtener los estudiantes de una determinada carrera. (parametro carreer_id)
 
-# Tecnologias
+# Tecnologias y setup
 
 El microservicio se encuentra implementado en nodejs, con expressjs. La base de datos que utiliza es una base de datos postgres, cuyos datos de acceso se encuentran en el archivo .env
 
