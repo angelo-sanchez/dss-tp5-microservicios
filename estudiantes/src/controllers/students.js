@@ -54,7 +54,8 @@ const createStudent = async (req, res) => {
             city_of_residence,
             university_book_number
           } = req.body;
-    
+          
+
         const student = await createStudentService([
             first_name,
             last_name,
@@ -67,6 +68,7 @@ const createStudent = async (req, res) => {
     
         res.status(201).json(student); 
     } catch (error) {
+        console.log(error);
         res.status(500).json({"error":error})
     }
 

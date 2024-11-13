@@ -1,5 +1,6 @@
 
 
+const { SCHEMA_NAME } = require("../../env");
 const pool = require("../config/db/database");
 
 
@@ -26,7 +27,7 @@ const getStudentsFilteredAndOrderer = async (filters, sort_by, order) => {
     const orderClause = `ORDER BY ${sort_by} ${order.toUpperCase() === "DESC" ? "DESC" : "ASC"}`;
 
     const query = `
-        SELECT * FROM "TP2".students
+        SELECT * FROM "${SCHEMA_NAME}".students
         ${whereClause}
         ${orderClause}
     `;
@@ -40,8 +41,9 @@ const getStudentsFilteredAndOrderer = async (filters, sort_by, order) => {
 /// Values es un array con first_name, last_name, age, gender, document_number, city_of_residence, university_book_number EN ORDEN.
 
 const persistStudent = async (values) => {
+    
         const query = `
-            INSERT INTO "TP2".students (
+            INSERT INTO "${SCHEMA_NAME}".students (
                 first_name, last_name, age, gender, document_number, city_of_residence, university_book_number
             ) VALUES ($1, $2, $3, $4, $5, $6, $7)
             RETURNING *;
