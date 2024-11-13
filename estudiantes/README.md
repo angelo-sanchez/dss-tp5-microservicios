@@ -71,3 +71,14 @@ Puede establecer un atributo de ordenamiento, y la direccion (ASC | DESC)
     "university_book_number":int
 }
  ```
+
+# Arquitectura interna
+
+El microservicio esta implementado con una arquitectura por capas, siendo estas 
+
+- Routers
+- Controllers
+- Services
+- Repositories.
+
+En el caso del repositorio de enrollments (matriculados), los datos los obtiene mediante mocks, o llamando al microservicio de matriculados (no implementado) en funcion de una variable de entorno.
