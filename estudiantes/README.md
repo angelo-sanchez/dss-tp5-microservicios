@@ -7,7 +7,7 @@ Depende de el microservicio de matriculados, para poder obtener los estudiantes 
 
 # Tecnologias
 
-El microservicio se encuentra implementado en nodejs, con expressjs. La base de datos a la que se conecta, es una base de datos postgres, cuyos datos de acceso se encuentran en el archivo .env
+El microservicio se encuentra implementado en nodejs, con expressjs. La base de datos que utiliza es una base de datos postgres, cuyos datos de acceso se encuentran en el archivo .env
 
 # Arquitectura interna
 
