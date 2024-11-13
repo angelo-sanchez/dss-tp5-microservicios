@@ -17,4 +17,3 @@ CREATE TABLE IF NOT EXISTS "TP5".students
     
 );
 
-TABLESPACE pg_default;
