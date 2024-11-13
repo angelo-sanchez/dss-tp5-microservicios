@@ -36,7 +36,7 @@ const getStudents = async (req, res) => {
     
         res.status(200).json(students)
     } catch (error) {
-        res.status(500)
+        res.status(500).json({"error":error})
     }
     
 
@@ -67,7 +67,7 @@ const createStudent = async (req, res) => {
     
         res.status(201).json(student); 
     } catch (error) {
-        res.status(500);
+        res.status(500).json({"error":error})
     }
 
 }
