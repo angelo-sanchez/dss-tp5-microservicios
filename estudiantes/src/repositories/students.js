@@ -1,6 +1,6 @@
 
 
-const pool = require("../db/database");
+const pool = require("../config/db/database");
 
 
 // filters es un map de columna:valor (nombreCol:valorFiltro) por el cual filtrara. Si hay mas de uno, lo hara como AND.
