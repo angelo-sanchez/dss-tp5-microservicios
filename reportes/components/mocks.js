@@ -4,6 +4,7 @@ const careers = [
   { careerId: 3, name: "Licenciatura en Derecho" },
   { careerId: 4, name: "Medicina Veterinaria" },
   { careerId: 5, name: "Ciencias de la Educación" },
+  { careerId: 6, name: "Licenciatura en Tecnología de los Alimentos" },
 ];
 
 const enrollments = [
