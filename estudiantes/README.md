@@ -8,6 +8,7 @@ Depende de el microservicio de matriculados, para poder obtener los estudiantes 
 # Tecnologias
 
 El microservicio se encuentra implementado en nodejs, con expressjs. La base de datos que utiliza es una base de datos postgres, cuyos datos de acceso se encuentran en el archivo .env
+El script con el schema necesario para correr el microservicio se encuentra en [schema](./schema.sql)
 
 # Arquitectura interna
 
