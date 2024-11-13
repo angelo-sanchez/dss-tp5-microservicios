@@ -1,7 +1,4 @@
 
--- SCHEMA: public
-
--- DROP SCHEMA IF EXISTS public ;
 
 CREATE SCHEMA IF NOT EXISTS "TP5"
     AUTHORIZATION pg_database_owner;
