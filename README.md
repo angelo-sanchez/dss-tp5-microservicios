@@ -4,7 +4,8 @@ Readme
 ## Vista dinamica general
 
 
-![image](https://github.com/user-attachments/assets/261c38ff-7e90-4eec-9175-c8e810322145)
+![image](https://github.com/user-attachments/assets/8cd84675-31be-4025-bdf8-124c965d7201)
+
 
 
 [Microservicio de Reportes](./reportes/README.md)
