@@ -9,7 +9,8 @@ Depende de el microservicio de matriculados, para poder obtener los estudiantes 
 
 El microservicio se encuentra implementado en nodejs, con expressjs. La base de datos que utiliza es una base de datos postgres, cuyos datos de acceso se encuentran en el archivo .env
 
-El script con el schema necesario para correr el microservicio se encuentra en [schema](./schema.sql)
+El script con el schema necesario para correr el microservicio se encuentra en [schema](./schema.sql).
+Tambien ver las variables de ambiente en .env para la conexion a la DB (DB_NAME, DB_HOST, DB_USER, DB_PASSWORD, DB_PORT)
 
 Una ves corriendo la Base de datos, el servidor node se levanta con node app.js
 
