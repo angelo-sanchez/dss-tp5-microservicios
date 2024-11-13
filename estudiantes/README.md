@@ -3,6 +3,23 @@ Microservicio de Estudiantes
 
 Este microservicio sirve para consultar datos de estudiantes, y crear nuevos estudiantes.
 
+Depende de el microservicio de matriculados, para poder obtener los estudiantes de una determinada carrera. (parametro carreer_id)
+
+# Tecnologias
+
+El microservicio se encuentra implementado en nodejs, con expressjs. La base de datos que utiliza es una base de datos postgres, cuyos datos de acceso se encuentran en el archivo .env
+
+# Arquitectura interna
+
+El microservicio esta implementado con una arquitectura por capas, siendo estas 
+
+- Routers
+- Controllers
+- Services
+- Repositories.
+
+En el caso del repositorio de enrollments (matriculados), los datos los obtiene mediante mocks, o llamando al microservicio de matriculados (no implementado) en funcion de una variable de entorno.
+
 # Rutas
 1. Obtiene el listado de estudiantes. 
 Puede filtrar por cualquiera de los atributos de la entidad student.
@@ -19,6 +36,7 @@ Puede establecer un atributo de ordenamiento, y la direccion (ASC | DESC)
 * document_number : string (opcional)
 * city_of_residence : string (opcional)
 * university_book_number : string (opcional)
+* carreer_id : string (opcional)
 * sort_by : string (opcional)
 * order : string (ASC | DESC) (opcional)
 
