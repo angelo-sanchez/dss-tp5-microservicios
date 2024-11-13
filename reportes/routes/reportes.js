@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { getPopularCareers } from "../components/popular-careers.js";
-import { getFullReport } from "../components/full-report.js";
+import { getPopularCareers } from "../controllers/popular-careers.js";
+import { getFullReport } from "../controllers/full-report.js";
 
 /** Este es el router principal, que empieza en /careers */
 export const reportes = Router();

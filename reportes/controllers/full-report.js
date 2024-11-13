@@ -1,5 +1,5 @@
-import { getAllCareers } from "./career-data.js";
-import { getAllEnrollments } from "./enrollment-data.js";
+import { getAllCareers } from "../repositories/career-data.js";
+import { getAllEnrollments } from "../repositories/enrollment-data.js";
 
 // Types
 const Career = { careerId: 0, name: "" };

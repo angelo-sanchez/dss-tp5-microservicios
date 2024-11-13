@@ -10,6 +10,18 @@ Para poder hacerlo, debe tener conexión a los demás microservicios del sistema
 
 Este microservicio consultará información de los demás microservicios para luego generar el reporte solicitado con la información obtenida
 
+## Tecnologías
+
+Este microservicio está desarrollado con express y nodejs, no tiene base de datos asociada, los datos se obtienen por REST API desde los microservicios citados
+
+## Arquitectura interna
+
+Presenta una arquitectura de 3 Capas
+
+- Routes: Es la capa de cara al cliente, se encarga de recibir y responder las solicitudes.
+- Controllers: Es la capa intermedia, que se encarga de procesar los datos solicitados a la capa inferior.
+- Repositories: Es la capa inferior, esta capa se encarga de buscar los datos en los microservicios externos (o mocks) y devolverlos a la capa intermedia.
+
 ## Rutas
 
 1.  Reporta las carreras con al menos un inscripto, ordenadas por orden alfabético.
