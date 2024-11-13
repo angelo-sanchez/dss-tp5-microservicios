@@ -1,5 +1,5 @@
-import { findCareerById } from "./career-data.js";
-import { getAllEnrollments } from "./enrollment-data.js";
+import { findCareerById } from "../repositories/career-data.js";
+import { getAllEnrollments } from "../repositories/enrollment-data.js";
 
 /**
  * Agrupa las matrículas por carrera, contando cuántas matrículas hay por carrera
