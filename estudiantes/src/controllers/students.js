@@ -1,4 +1,4 @@
-const {getStudentsFilteredAndOrderer, persistStudent} = require("../repositories/students");
+const { getStudentsService, createStudentService } = require("../services/student");
 
 const getStudents = async (req, res) => {
 
@@ -13,11 +13,12 @@ const getStudents = async (req, res) => {
             city_of_residence,
             university_book_number,
             sort_by = "id", 
-            order = "ASC" 
+            order = "ASC",
+            carreer_id 
           } = req.query;
     
     
-          const students = await getStudentsFilteredAndOrderer({
+          const students = await getStudentsService({
             id,
             first_name,
             last_name,
@@ -26,7 +27,9 @@ const getStudents = async (req, res) => {
             document_number,
             city_of_residence,
             university_book_number,
+            
           },
+          carreer_id,
           sort_by,
           order
         );
@@ -52,7 +55,7 @@ const createStudent = async (req, res) => {
             university_book_number
           } = req.body;
     
-        const student = await persistStudent([
+        const student = await createStudentService([
             first_name,
             last_name,
             age,
