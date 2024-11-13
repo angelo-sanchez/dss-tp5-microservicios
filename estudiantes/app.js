@@ -5,7 +5,7 @@ var logger = require('morgan');
 const { PORT } = require("./env.js");
 
 var studentsRouter = require('./src/routes/students.js');
-const pool = require('./src/db/database.js');
+const pool = require('./src/config/db/database.js');
 
 var app = express();
 

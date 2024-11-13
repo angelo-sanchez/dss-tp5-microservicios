@@ -1,5 +1,5 @@
 const pkg =  require('pg');
-const { DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME } = require('../../env');
+const { DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME } = require('../../../env');
 
 
 const { Pool } = pkg;
